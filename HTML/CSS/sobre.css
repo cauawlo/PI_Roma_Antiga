@@ -1,14 +1,26 @@
 @import url("header.css");
 @import url("footer.css");
 
+:root {
+  --vinho: #420906;
+  --vinho-claro: #650f0a;
+  --dourado: #d6a13b;
+  --bege: #fff8ed;
+  --creme: #f5ead8;
+  --branco: #ffffff;
+  --texto: #39312c;
+  --cinza: #6b625b;
+}
+
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 body {
   margin: 0;
-  background: #420906;
-  color: #fff;
+  background: var(--bege);
+  color: var(--texto);
   font-family: "Open Sans", Arial, sans-serif;
 }
 
@@ -18,151 +30,193 @@ h3 {
   font-family: "Cinzel", serif;
 }
 
-/* === BANNER === */
+main {
+  width: 100%;
+}
 
 .banner {
-  min-height: 300px;
-  padding: 50px 20px;
+  min-height: 290px;
+  padding: 55px 7%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.78)),
+    linear-gradient(90deg, rgba(40, 5, 3, 0.88), rgba(40, 5, 3, 0.35)),
     url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1600&q=80")
       center / cover;
 }
 
+.banner-conteudo {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.banner-legenda {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--dourado);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
 .banner h1 {
-  margin: 0 0 15px;
-  color: #fff;
-  font-size: 32px;
+  max-width: 800px;
+  margin: 0 0 18px;
+  color: var(--branco);
+  font-size: 29px;
   font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 .banner p {
   max-width: 600px;
   margin: 0;
-  color: #e9e3da;
-  font-size: 14px;
-  line-height: 1.8;
+  color: #f0e7dc;
+  font-size: 12px;
+  line-height: 1.9;
 }
 
-/* === SOBRE NÓS === */
-
 .sobre {
-  padding: 50px 20px;
-  background: #420906;
-  text-align: center;
+  padding: 60px 7%;
+  background: var(--vinho);
+}
+
+.sobre-conteudo {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.secao-numero {
+  display: block;
+  margin-bottom: 3px;
+  color: #b9852c;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .sobre h2,
 .objetivo h2,
-.integrantes h2,
-.tecnologias h2 {
-  margin: 0 0 30px;
-  color: #d69d2a;
-  font-size: 28px;
+.integrantes h2 {
+  margin: 0 0 22px;
+  font-size: 27px;
   font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.sobre h2 {
+  color: var(--dourado);
 }
 
 .sobre p {
   max-width: 950px;
-  margin: 0 auto 20px;
-  color: #f4eee6;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  margin: 0 0 20px;
+  color: #f5eee5;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 16px;
   line-height: 1.9;
-  text-align: justify;
+  text-align: left;
 }
 
-/* === OBJETIVO === */
+.sobre p:last-child {
+  margin-bottom: 0;
+}
 
 .objetivo {
-  padding: 50px 20px;
-  background: #fff8ed;
-  color: #420906;
+  padding: 60px 7%;
+  background: var(--bege);
 }
 
 .objetivo-conteudo {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.objetivo-texto {
+  flex: 1;
 }
 
 .objetivo h2 {
-  color: #420906;
+  margin-bottom: 20px;
+  color: var(--vinho);
 }
 
 .objetivo p {
-  font-family: "Open Sans", sans-serif;
-  max-width: 850px;
+  max-width: 900px;
   margin: 0;
   color: #51453d;
-  font-size: 15px;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 16px;
   line-height: 1.9;
+  text-align: left;
 }
 
-/* === INTEGRANTES === */
-
 .integrantes {
-  padding: 50px 20px;
-  background: #f7ecda;
+  padding: 65px 7%;
+  background: #f1e4d0;
+}
+
+.integrantes-cabecalho {
+  max-width: 750px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .integrantes h2 {
-  color: #420906;
+  margin-bottom: 18px;
+  color: var(--vinho);
+}
+
+.integrantes .secao-numero {
+  color: #a87517;
 }
 
 .subtitulo {
-  max-width: 650px;
-  margin: auto;
-  color: #665b53;
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--cinza);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.8;
 }
-
-/* === EQUIPE === */
 
 .equipe {
-  max-width: 1100px;
-  margin: 45px auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 35px auto 0;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 25px;
-  flex-wrap: wrap;
 }
 
-/* === CARDS === */
-
 .card {
-  width: 90%;
-  max-width: 220px;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
   overflow: hidden;
-  background: #fff;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  background: var(--branco);
+  border: 1px solid #e5d5bf;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(55, 25, 10, 0.1);
+  transition: 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(55, 25, 10, 0.17);
 }
-
-.card.ativo {
-  transform: translateY(-8px);
-  box-shadow: 0 0 0 3px rgba(214, 157, 42, 0.2);
-}
-
-/* === FOTO === */
 
 .foto {
   width: 100%;
-  height: 200px;
+  height: 270px;
   overflow: hidden;
-  background: #eadbc4;
+  background: #e5d5bd;
 }
 
 .foto img {
@@ -170,107 +224,133 @@ h3 {
   height: 100%;
   display: block;
   object-fit: cover;
+  object-position: center;
+  transition: 0.4s ease;
 }
 
-/* === NOME DO INTEGRANTE === */
+.card:hover .foto img {
+  transform: scale(1.04);
+}
 
 .card-info {
-  min-height: 85px;
-  padding: 14px 10px;
+  flex: 1;
+  padding: 22px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.card-info p {
-  margin: 0 0 7px;
-  color: #420906;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.card-info span {
+.card-numero {
+  margin-bottom: 10px;
   color: #a87517;
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 1.8px;
 }
 
-/* === INFORMAÇÃO DO INTEGRANTE === */
-
-#informacao {
-  width: 90%;
-  max-width: 900px;
-  min-height: 150px;
-  margin: 45px auto 0;
-  padding: 20px;
-  background: #420906;
-  border-radius: 8px;
-  color: #f5f2ec;
-  text-align: left;
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-#informacao strong {
-  color: #d69d2a;
+.card-info h3 {
+  margin: 0 0 10px;
+  color: var(--vinho);
   font-family: "Cinzel", serif;
-  font-size: 19px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
-#informacao b {
-  color: #d69d2a;
+.area {
+  margin-bottom: 15px;
+  color: #a87517;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
 }
 
-.selecione {
-  display: block;
-  padding: 25px 0;
-  color: #e9e3da;
-  text-align: center;
-  font-size: 13px;
+.card-info p {
+  margin: 0;
+  color: var(--cinza);
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
-/* === RESPONSIVIDADE === */
-
-@media (min-width: 601px) {
+@media (min-width: 768px) {
   .banner {
-    padding: 70px 10%;
-    min-height: 420px;
+    min-height: 380px;
+    padding: 70px 8%;
+  }
+
+  .banner-legenda {
+    font-size: 12px;
+    letter-spacing: 4px;
   }
 
   .banner h1 {
-    font-size: 52px;
+    font-size: clamp(30px, 4.5vw, 50px);
   }
 
   .banner p {
     font-size: 16px;
   }
 
-  .sobre,
-  .objetivo,
-  .integrantes {
-    padding: 90px 10%;
+  .sobre {
+    padding: 85px 8%;
   }
 
   .sobre h2,
   .objetivo h2,
   .integrantes h2 {
-    font-size: 36px;
+    font-size: clamp(27px, 3vw, 36px);
   }
 
-  .sobre p,
+  .sobre p {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .objetivo {
+    padding: 80px 8%;
+  }
+
+  .objetivo-conteudo {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
   .objetivo p {
-    font-size: 17px;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .integrantes {
+    padding: 85px 6%;
+  }
+
+  .subtitulo {
+    font-size: 15px;
   }
 
   .equipe {
-    flex-direction: row;
-    align-items: initial;
+    margin-top: 50px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 30px;
+    row-gap: 40px;
   }
 
   .card {
-    width: 220px;
-    max-width: none;
+    max-width: 340px;
   }
 
-  #informacao {
-    padding: 28px;
+  .card:last-child {
+    grid-column: 2;
+  }
+
+  .foto {
+    height: 290px;
+  }
+
+  .card-info {
+    padding: 22px 20px;
   }
 }

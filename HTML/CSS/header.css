@@ -1,100 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
 
-header h1 {
-  font-family: "Ibarra Real Nova", serif;
-}
-
-header .ativo {
-  color: #d69d2a;
-}
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 header {
-  background-color: #420906;
+  background: #420906;
   color: white;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 2vw;
+  padding: 12px 5%;
+  padding-right: 15vw;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header img {
-  width: 40px;
-  padding-top: 3vw;
+  width: 55px;
+  height: auto;
+}
+
+header nav {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 header a {
-  line-height: 28px;
-  font-size: 0.7rem;
-}
-
-header .usuario-logado {
-  color: #f7d17d;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-
-header .logout-btn {
-  background: transparent;
-  border: 1px solid #f7d17d;
-  color: #fff;
-  padding: 8px 10px;
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  cursor: pointer;
-  transition: 0.3s ease;
-  margin-left: 10px;
-}
-
-header .logout-btn:hover {
-  background: #f7d17d;
-  color: #420906;
-}
-
-header a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.75rem;
   font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
-@media (min-width: 600px) {
+header a:hover,
+header a.ativo {
+  color: #d69d2a;
+}
+
+@media (min-width: 769px) {
   header {
-    background-color: #420906;
-    display: flex;
-    color: white;
-    text-transform: uppercase;
-    padding: 0;
-  }
-
-  header img {
-    padding: 0 0 0 1vw;
-    width: 70px;
-  }
-
-  header a {
-    font-size: 1rem;
-    transition: 0.4s ease;
-  }
-
-  header A:hover {
-    color: #d69d2a;
-    font-size: 1.1rem;
-    transition: 0.5s ease;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   header nav {
-    padding: 1vw;
-    display: flex;
-    justify-content: space-between;
-    gap: 40vw;
-    align-items: center;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  header img {
+    width: 60px;
   }
 
   header ul {
-    display: flex;
-    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
   }
 
-  header li {
-    font-size: 1vw;
+  header a {
+    font-size: 0.9rem;
   }
 }

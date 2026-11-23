@@ -4,27 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Fale Conosco | Roma Antiga</title>
-    <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/forms.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Ibarra+Real+Nova:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap"
-      rel="stylesheet"/>
-
-    <script src="CSS/JS/obrigado.js"></script>
   </head>
 
   <body>
     <header>
+      <a href="../index.html"
+          ><img src="CSS/IMG/ROMA.jpg" alt="Logo Roma Antiga"
+        /></a>
       <nav>
-        <img src="CSS/IMG/ROMA.jpg" alt="" />
+        
 
         <ul>
           <li><a href="../index.html">INÍCIO</a></li>
-          <li><a class="ativo" href="comercio.html">COMÉRCIO</a></li>
+          <li><a href="comercio.html">COMÉRCIO</a></li>
           <li><a href="tecnologia.html">TECNOLOGIA</a></li>
           <li><a href="rotas.html">ROTAS</a></li>
           <li><a href="poder.html">PODER</a></li>
@@ -37,7 +30,7 @@
       <section class="formulario">
         <div class="container">
           <div>
-            <h1>FALE <span>CONOSCO</span></h1>
+            <h1>FALE CONOSCO</h1>
             <p>
               Tem alguma dúvida, sugestão ou informação que gostaria de
               compartilhar? Entre em contato conosco! Sua mensagem é importante
@@ -68,10 +61,14 @@
                 name="access_key"
                 value="7cb355ad-d4d4-4cd6-a3e0-c68af3a57a06"
               />
-
+              <input
+                type="hidden"
+                name="redirect"
+                value="http://127.0.0.1:5500/TrabalhoSepe/HTML/obrigado.html"
+              />
               <ul>
                 <li>
-                  <label for="nome">Nome completo <span>*</span></label>
+                  <label for="nome">Nome completo</label>
                   <div class="conteudo">
                     <img src="CSS/IMG/nome.svg" alt="" />
                     <input
@@ -84,7 +81,7 @@
                   </div>
                 </li>
                 <li>
-                  <label for="email">E-mail <span>*</span></label>
+                  <label for="email">E-mail</label>
                   <div class="conteudo">
                     <img src="CSS/IMG/email.svg" alt="" />
                     <input
@@ -109,7 +106,7 @@
                   </div>
                 </li>
                 <li>
-                  <label for="msg">Mensagem <span>*</span></label>
+                  <label for="msg">Mensagem</label>
                   <div class="conteudo">
                     <textarea
                       id="msg"
@@ -121,7 +118,6 @@
                 </li>
                 <li class="botao">
                   <button type="submit">ENVIAR</button>
-
                   <button type="reset">LIMPAR</button>
                 </li>
               </ul>
@@ -130,5 +126,47 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <img id="logo-Footer" src="CSS/IMG/ROMA.jpg" alt="roma-logo" />
+        </div>
+
+        <div class="footer-links">
+          <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="HTML/comercio.html">Comércio</a></li>
+            <li><a href="HTML/tecnologia.html">Tecnologia</a></li>
+            <li><a href="HTML/rotas.html">Rotas</a></li>
+            <li><a href="HTML/poder.html">Poder</a></li>
+            <li><a href="HTML/sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+        </div>
+
+        <div class="footer-cadastro">
+          <h3>CADASTRE-SE</h3>
+
+          <input type="text" placeholder="Nome" />
+          <input type="email" placeholder="E-mail" />
+
+          <button type="submit">CADASTRAR</button>
+        </div>
+      </div>
+
+      <div class="footer-redes">
+        <a href="https://wa.me/5547996095892" target="_blank"
+          ><img src="CSS/IMG/whatsapp 1.svg" alt="icon-insta"
+        /></a>
+        <a href="https://www.instagram.com/romaantigasepe/" target="_blank"
+          ><img src="CSS/IMG/instagram 1.svg" alt="icon-face"
+        /></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Roma Antiga — SEPE</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -3,6 +3,8 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
+  user-select: none;
 }
 
 body {
@@ -53,7 +55,6 @@ body {
 }
 
 /* === Seção Rotas === */
-
 .rotas {
   padding: 60px 35px 30px;
   background-color: #fff8ed;

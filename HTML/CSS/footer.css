@@ -1,3 +1,4 @@
+
 footer {
   background-color: #420906;
   color: white;
@@ -23,6 +24,12 @@ footer {
   text-decoration: none;
   font-size: 12px;
 }
+
+.footer-links a:hover{
+  color: #d69d2a;
+}
+  
+
 
 .footer-cadastro {
   width: 100%;

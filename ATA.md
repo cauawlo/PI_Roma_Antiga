@@ -342,3 +342,170 @@
 
 ---
 
+
+* ## 13º dia — 13/10/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     | Nenhuma alteração .                                             |
+| GitHub    | Andreus Cesar Coelho e Kaiki de Souza Moreira.                  |
+| CSS       | Kaiki de Souza Moreira e Guilherme Luciano da Silva.            |
+| HTML      | Kaiki de Souza Moreira e GUilherme Luciano da Silva.            |
+| Pesquisas | Não foram realizadas pesquisas nesse dia.                       |
+
+**Ausente:**
+
+* Cauã Wlodarczyk *
+
+**Responsabilidades:**
+
+Reunião entre os integrantes presentes referente ao Painel de Integração
+
+* Discutimos sobre nossa participação no Painel Integração, chegando a conclusão primaria de que nossa apresentação nos rendeu diversos beneficios, tais como um entendimento melhor do assunto central do nosso site, devido a necessidade de apresentar a alunos, professores e etc, mesmo quando nem todos os integrantes estavam presente, afinal, diversas vezes foi necessario apresentar a "parte do colega". Além do mais foi proveitoso a diversidade de conhecimentos e cultural presente no Painel de Integração, saímos de lá sabendo sobre coisas que podem de alguma forma agregar em nossas vidas no futuro.
+
+
+
+* ## 14º dia — 20/10/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                                    |20
+| --------- | --------------------------------------------------------------- |
+| Figma     |  Cauã W. Andreus C. C.                                          |
+| GitHub    |  Ninguém                                                        |
+| CSS       |  Ninguém                                                        |
+| HTML      |  Ninguém                                                        |
+| Pesquisas |  Ninguém                                                        |
+
+**Ausente:**
+
+* Cauã Wlodarczyk : Ausente por conta da gripe. *
+* Andreus C. C.   : Ausente por conta da gripe. *
+* Guilherme L. S. : Ausente por conta da gripe. *
+* Kaiki S. M.     : Complicações climaticas     *
+
+**Responsabilidades:**
+
+O figma foi nossa principal responsabilidade por conta que no ínicio do projeto fizemos um modelo do figma, e agora temos um modelo totalmente diferente no nosso repositório e agora precisamos alterar o figma.
+
+* ## 15º dia — 27/10/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     |  Cauã W. Andreus C. C.                                          |
+| GitHub    |  Kaiki de Souza moreira                                         |
+| CSS       |  Kaiki de Souza M.                                              |
+| HTML      |  Kaiki, Guilherme                                               |
+| Pesquisas |  Ninguém                                                        |
+
+**Ausente:**
+
+* Nenhum ausente *
+
+**Responsabilidades:**
+
+O figma foi nossa principal responsabilidade por conta que no ínicio do projeto fizemos um modelo do figma, e agora temos um modelo totalmente diferente no nosso repositório e agora precisamos alterar o figma.
+
+
+* ## 16º dia — 03/11/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     |  Cauã W.                                                        |
+| GitHub    |  Cauã Wlodarczyk                                                |
+| CSS       |  Guilherme, Andreus, Kaiki                                      |
+| HTML      |  Guilherme, Andreus, Kaiki                                      |
+| Pesquisas |  Ninguém                                                        |
+
+**Ausente:**
+
+* Nenhum ausente *
+
+**Responsabilidades:**
+
+O figma ainda está em processo de atualização, e o resto da equipe está corrigindo erros, e melhorando as páginas já existentes.
+
+
+* ## 17º dia — 10/11/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades (para fazer em casa)
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     |  Cauã Wlodarczyk e Andreus Cesar Coelho                                                |
+| GitHub    |  Cauã Wlodarczyk                                                |
+| CSS       |  Guilherme, Kaiki                                               |
+| HTML      |  Guilherme, Kaiki                                               |
+| Pesquisas |  Andreus                                                        |
+
+**Ausente:**
+
+* Andreus Cesar Coelho *
+* Cauã Wlodarczyk *
+* Guilherme Luciano da Silva (justificado)*
+* Kaiki de Souza Moreira *
+
+* ## 18º dia — 17/11/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     |  Cauã Wlodarczyk e Andreus Cesar Coelho                         |
+| GitHub    |  Ninguém                                                        |
+| CSS       |  Guilherme, Kaiki                                               |
+| HTML      |  Guilherme, Kaiki                                               |
+| Pesquisas |  Ninguém                                                        |
+
+**Ausente:**
+
+* Andreus Cesar Coelho *
+* Cauã Wlodarczyk *
