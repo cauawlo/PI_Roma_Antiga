@@ -53,7 +53,7 @@ img {
   max-width: 650px;
   margin-top: 15px;
   color: #f5f2ec;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   line-height: 1.7;
 }
 
@@ -84,7 +84,7 @@ img {
 .rotas > p {
   margin-bottom: 16px;
   color: #444444;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.8;
   text-align: center;
 }
