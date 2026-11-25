@@ -1,6 +1,6 @@
 @import url("header.css");
 @import url("footer.css");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
 :root {
   --vinho: #420906;
   --vinho-claro: #7b1e17;
@@ -12,35 +12,36 @@
 
 html {
   scroll-behavior: smooth;
-  user-select: none;
 }
 
 body {
-  margin: 0;
   background-color: var(--bege);
   color: var(--texto);
   font-family: "Open Sans", sans-serif;
-  user-select: none;
 }
+
 .banner {
   min-height: 390px;
   display: flex;
   align-items: center;
   padding: 45px 20px;
   background-image:
-    linear-gradient(rgba(35, 7, 4, 0.68), rgba(35, 7, 4, 0.65)),
+    linear-gradient(rgba(35, 7, 4, 0.72), rgba(35, 7, 4, 0.68)),
     url("IMG/poderroma.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .banner-conteudo {
   width: 100%;
   max-width: 1050px;
-  margin: 0 auto;
+  margin: auto;
 }
+
 .banner h1 {
-  margin: 0 0 15px;
+  max-width: 650px;
+  margin-bottom: 15px;
   color: white;
   font-family: "Cinzel", serif;
   font-size: 29px;
@@ -49,25 +50,29 @@ body {
   letter-spacing: 1px;
   text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
 }
+
 .banner h1 span {
   color: var(--dourado);
 }
+
 .banner p {
   max-width: 600px;
-  margin: 0;
   color: #f5f2ec;
   font-size: 13px;
-  line-height: 1.9;
+  line-height: 1.8;
 }
+
 .cards {
   padding: 50px 16px 60px;
   background-color: var(--creme);
 }
+
 .cards-introducao {
   max-width: 750px;
   margin: 0 auto 35px;
   text-align: center;
 }
+
 .titulo-secao {
   margin-bottom: 10px;
   color: #a97920;
@@ -76,30 +81,34 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+
 .cards-introducao h2 {
-  margin: 0 0 12px;
+  margin-bottom: 12px;
   color: var(--vinho);
   font-family: "Cinzel", serif;
   font-size: 23px;
   font-weight: 700;
   line-height: 1.5;
 }
+
 .cards-introducao h2 span {
   color: var(--vinho-claro);
 }
+
 .cards-introducao > p:last-child {
-  margin: 0;
   color: #625951;
   font-size: 13px;
   line-height: 1.9;
 }
+
 .container-cards {
   max-width: 1050px;
-  margin: 0 auto;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 22px;
 }
+
 .card {
   overflow: hidden;
   background-color: white;
@@ -108,27 +117,32 @@ body {
   box-shadow: 0 6px 20px rgba(66, 9, 6, 0.09);
   transition: 0.3s ease;
 }
+
 .card-conteudo {
   padding: 25px 22px;
 }
+
 .card h3 {
-  margin: 0 0 12px;
+  margin-bottom: 12px;
   color: var(--vinho);
   font-family: "Cinzel", serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.5;
 }
+
 .card > .card-conteudo > p {
-  margin: 0 0 20px;
+  margin-bottom: 20px;
   color: #5b534c;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.9;
 }
+
 .card details {
   padding-top: 15px;
   border-top: 1px solid #e9dfd3;
 }
+
 .card summary {
   width: fit-content;
   color: var(--vinho);
@@ -136,16 +150,25 @@ body {
   font-weight: 700;
   cursor: pointer;
   list-style: none;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
+.card summary:hover {
+  color: var(--dourado);
+}
+
+.card summary:focus-visible {
+  outline: 2px solid var(--dourado);
+  outline-offset: 4px;
+}
 
 .card details p {
-  margin: 13px 0 0;
+  margin-top: 13px;
   color: #625951;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.9;
 }
+
 .botao-imperadores {
   display: block;
   width: fit-content;
@@ -156,53 +179,63 @@ body {
   color: white;
   border: 2px solid var(--vinho);
   border-radius: 30px;
-  font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
   box-shadow: 0 5px 15px rgba(66, 9, 6, 0.16);
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
-@media (min-width: 768px) {
+
+@media (min-width: 769px) {
   .banner {
     min-height: 620px;
     padding: 70px 50px;
   }
+
   .banner h1 {
     font-size: 45px;
-    line-height: 1.3;
     letter-spacing: 2px;
   }
+
   .banner p {
     font-size: 15px;
   }
+
   .cards {
     padding: 85px 30px;
   }
+
   .cards-introducao {
     margin-bottom: 45px;
   }
+
   .cards-introducao h2 {
     font-size: 31px;
   }
+
   .cards-introducao > p:last-child {
     font-size: 14px;
   }
+
   .container-cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
+
   .card-conteudo {
     padding: 30px;
   }
+
   .card h3 {
     font-size: 18px;
   }
+
   .card:hover {
     transform: translateY(-7px);
     box-shadow: 0 14px 30px rgba(66, 9, 6, 0.15);
   }
+
   .botao-imperadores:hover {
     background-color: var(--dourado);
     color: var(--vinho);

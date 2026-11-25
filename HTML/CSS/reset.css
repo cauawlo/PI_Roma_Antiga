@@ -15,6 +15,9 @@
   border: 0 solid; /* 3 */
 }
 
+html {
+  font-size: 112.5%;
+}
 summary {
   list-style: none;
 }
@@ -145,7 +148,8 @@ summary {
   Make lists unstyled by default.
 */
 ol,
-ul, menu {
+ul,
+menu {
   list-style: none;
 }
 

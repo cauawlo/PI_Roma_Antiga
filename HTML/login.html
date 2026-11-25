@@ -1,29 +1,27 @@
 <!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Roma Antiga</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | Roma Antiga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <body>
+    <header>
+      <a href="../index.html">
+        <img src="CSS/IMG/ROMA.jpg" alt="Logo Roma Antiga" />
+      </a>
 
-  
-  <link rel="stylesheet" href="CSS/login.css">
-</head>
-
-<body>
-  <header>
-      <a href="../index.html"
-          ><img src="CSS/IMG/ROMA.jpg" alt="Logo Roma Antiga"
-        /></a>
       <nav>
-       
-
         <ul>
           <li><a href="../index.html">INÍCIO</a></li>
           <li><a href="comercio.html">COMÉRCIO</a></li>
@@ -35,80 +33,92 @@
         </ul>
       </nav>
     </header>
-  <main class="login-container">
-    <section class="login-box">
-      <h1>ROMA</h1>
 
-      <div id="loginView">
-        <h2>Entrar</h2>
+    <main class="login-container">
+      <section class="login-box">
+        <h1>ROMA</h1>
 
-        <p class="descricao">Acesse sua conta para continuar.</p>
+        <div id="loginView">
+          <h2>Entrar</h2>
 
-        <div class="campo">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+          <p class="descricao">Acesse sua conta para continuar.</p>
+
+          <form>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="senha">Senha</label>
+              <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha"
+              />
+            </div>
+
+            <button type="submit">ENTRAR</button>
+          </form>
+
+          <p id="mensagem"></p>
+
+          <a id="voltar" href="../index.html">VOLTAR</a>
+
+          <div class="cadastro">
+            <p>Ainda não possui uma conta?</p>
+            <button type="button" id="cadastrarBtn">CRIAR CONTA</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <img id="logo-Footer" src="CSS/IMG/ROMA.jpg" alt="roma-logo" />
         </div>
 
-        <div class="campo">
-          <label for="senha">Senha</label>
-          <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+        <div class="footer-links">
+          <nav>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="comercio.html">Comércio</a></li>
+              <li><a href="tecnologia.html">Tecnologia</a></li>
+              <li><a href="rotas.html">Rotas</a></li>
+              <li><a href="poder.html">Poder</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+          </nav>
         </div>
 
-        <button type="button">ENTRAR</button>
-
-        <p id="mensagem"></p>
-
-        <a id="voltar" href="../index.html">VOLTAR</a>
-
-        <div class="cadastro">
-          <p>Ainda não possui uma conta?</p>
-          <button type="button" id="cadastrarBtn">CRIAR CONTA</button>
+        <div class="footer-cadastro">
+          <h3>CADASTRE-SE</h3>
+          <input type="text" placeholder="Nome" />
+          <input type="email" placeholder="E-mail" />
+          <button type="button">CADASTRAR</button>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-info">
-        <img id="logo-Footer" src="CSS/IMG/ROMA.jpg" alt="roma-logo">
+      <div class="footer-redes">
+        <a href="https://wa.me/5547996095892" target="_blank">
+          <img src="CSS/IMG/whatsapp 1.svg" alt="WhatsApp" />
+        </a>
+
+        <a href="https://www.instagram.com/romaantigasepe/" target="_blank">
+          <img src="CSS/IMG/instagram 1.svg" alt="Instagram" />
+        </a>
       </div>
 
-      <div class="footer-links">
-        <nav>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="HTML/comercio.html">Comércio</a></li>
-            <li><a href="HTML/tecnologia.html">Tecnologia</a></li>
-            <li><a href="HTML/rotas.html">Rotas</a></li>
-            <li><a href="HTML/poder.html">Poder</a></li>
-            <li><a href="HTML/sobre.html">Sobre</a></li>
-          </ul>
-        </nav>
+      <div class="footer-bottom">
+        <p>© 2026 Roma Antiga — SEPE</p>
       </div>
-
-      <div class="footer-cadastro">
-        <h3>CADASTRE-SE</h3>
-        <input type="text" placeholder="Nome">
-        <input type="email" placeholder="E-mail">
-        <button type="button">CADASTRAR</button>
-      </div>
-    </div>
-
-    <div class="footer-redes">
-      <a href="https://wa.me/5547996095892" target="_blank">
-        <img src="CSS/IMG/whatsapp 1.svg" alt="WhatsApp">
-      </a>
-
-      <a href="https://www.instagram.com/romaantigasepe/" target="_blank">
-        <img src="CSS/IMG/instagram 1.svg" alt="Instagram">
-      </a>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Roma Antiga — SEPE</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

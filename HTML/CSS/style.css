@@ -1,27 +1,29 @@
-
 @import url("header.css");
 @import url("footer.css");
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --vinho: #420906;
-  --vinho-claro: #7b1e17;
   --dourado: #cf912b;
+  --dourado-escuro: #8a5a00;
   --creme: #fffaf3;
-  --branco: #fff;
+  --branco: #ffffff;
   --texto: #171312;
   --cinza: #6b6460;
 }
 
 html {
   scroll-behavior: smooth;
-  user-select: none;
 }
 
 body {
   background: var(--creme);
   color: var(--texto);
   font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -31,49 +33,47 @@ h3 {
   font-family: "Urbanist", sans-serif;
 }
 
-.banner {
-  align-items: center;
+#banner {
   min-height: 520px;
   padding: 45px 6%;
-  background:
-    linear-gradient(90deg, #140503eb, #14050380, #14050359),
-    url("IMG/Roma-Antiga.webp") center / cover;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(20, 5, 3, 0.92),
+      rgba(20, 5, 3, 0.5),
+      rgba(20, 5, 3, 0.35)
+    ),
+    url("IMG/Roma-Antiga.webp");
+  background-position: center;
+  background-size: cover;
   color: var(--branco);
 }
 
-.banner h1 {
-  line-height: 1.1;
+#banner h1 {
+  max-width: 700px;
   margin-bottom: 25px;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: 2.5rem;
+  line-height: 1.1;
 }
 
-.banner h1 span {
+#banner h1 span {
   color: var(--dourado);
 }
 
-.banner-texto {
+#banner > p {
   max-width: 600px;
   margin-bottom: 25px;
-  color: #eee;
+  color: #eeeeee;
   line-height: 1.8;
 }
 
-#mini-titulo {
-  color: var(--dourado);
-  font-size: 0.8rem;
-  font-family: "Fredoka",sans-serif;
-}
-
-.explorar {
-  width: 100%;
+#banner details {
   max-width: 300px;
-  color: var(--branco);
-  background: #420906dc;
-  border: 1px solid #e0ad55;
+  background: rgba(66, 9, 6, 0.86);
   border-radius: 6px;
 }
 
-.explorar summary {
+#banner summary {
   padding: 16px;
   text-align: center;
   font-size: 0.85rem;
@@ -83,157 +83,162 @@ h3 {
   list-style: none;
 }
 
-
-.explorar summary::after {
-  content: "+";
-  margin-left: 12px;
+#banner summary:hover {
   color: var(--dourado);
 }
 
-.explorar[open] summary::after {
-  content: "−";
-}
-
-.explorar .conteudo {
-  padding: 0 20px 20px;
-}
-
-.explorar h2 {
+#banner details h2 {
+  padding: 0 20px;
+  margin-bottom: 10px;
   color: var(--dourado);
   font-size: 1.3rem;
-  margin-bottom: 10px;
 }
 
-.explorar p {
+#banner details p {
+  padding: 0 20px 12px 20px;
   font-size: 0.9rem;
   line-height: 1.7;
-  margin-bottom: 12px;
 }
 
-.introducao {
+#banner details p:last-child {
+  padding-bottom: 20px;
+}
+
+#contexto {
   max-width: 1600px;
   margin: auto;
   padding: 60px 7%;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 25px;
 }
 
-.introducao h2 {
+#contexto h2 {
   color: var(--vinho);
-  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-size: 1.7rem;
   line-height: 1.3;
 }
 
-.introducao-texto {
-  padding: 25px 0 0;
-  border-left: 0;
+#contexto h2 span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--dourado-escuro);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#contexto div {
+  padding-top: 25px;
   border-top: 1px solid #d8c7aa;
 }
 
-.introducao-texto p {
+#contexto div p {
+  margin-bottom: 10px;
   color: var(--cinza);
   line-height: 1.8;
-  margin-bottom: 10px;
 }
 
-.introducao-texto p:last-child {
-  margin-bottom: none;
+#contexto div p:last-child {
+  margin-bottom: 0;
 }
 
-
-.exploracao {
+#sugestoes {
   padding: 55px 6%;
   background: #f4eee5;
 }
 
-.exploracao > h2 {
+#sugestoes h2 {
   max-width: 1200px;
   margin: 0 auto 20px;
   color: var(--vinho);
-  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  font-size: 1.5rem;
 }
 
-.cards {
+#sugestoes ul {
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr;
+  list-style: none;
   gap: 25px;
 }
 
-.card {
+#sugestoes li {
   padding: 30px;
   background: var(--branco);
-  transition: 0.3s;
   border-radius: 4px;
+  transition: 0.3s;
 }
 
-.card:hover {
+#sugestoes li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px #42090618;
+  box-shadow: 0 12px 25px rgba(66, 9, 6, 0.1);
 }
 
-.card-imagem img {
+#sugestoes img {
+  display: block;
   width: 38px;
   height: 38px;
-  object-fit: contain;
   margin-bottom: 18px;
+  object-fit: contain;
 }
 
-.card h3 {
+#sugestoes h3 {
+  margin-bottom: 10px;
   color: var(--vinho);
   font-size: 1.25rem;
-  margin-bottom: 10px;
 }
 
-.card p {
+#sugestoes p {
+  margin-bottom: 18px;
   color: var(--cinza);
   font-size: 0.9rem;
   line-height: 1.7;
-  margin-bottom: 18px;
 }
 
-.card a {
+#sugestoes a {
   color: var(--vinho);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.card a:hover {
-  color: var(--dourado);
-}
-
-.card a span {
-  margin-left: 8px;
-}
-
 @media (min-width: 768px) {
-
-  .banner {
+  #banner {
     min-height: auto;
     padding: 70px 8%;
   }
 
-  .introducao {
+  #banner h1 {
+    font-size: 3.5rem;
+  }
+
+  #contexto {
     padding: 90px 7%;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
 
-  .introducao-texto {
-    padding-left: 35px;
+  #contexto h2 {
+    font-size: 2rem;
+  }
+
+  #contexto div {
     padding-top: 0;
-    border-left: 1px solid #d8c7aa;
+    padding-left: 35px;
     border-top: 0;
+    border-left: 1px solid #d8c7aa;
   }
 
-  .cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .exploracao {
+  #sugestoes {
     padding: 80px 7%;
+  }
+
+  #sugestoes h2 {
+    font-size: 2rem;
+  }
+
+  #sugestoes ul {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

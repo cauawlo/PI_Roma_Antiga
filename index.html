@@ -11,87 +11,77 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Ibarra+Real+Nova:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Ibarra+Real+Nova:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Urbanist:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
     <header>
-      <a href="index.html"><img src="HTML/CSS/IMG/ROMA.jpg" alt="Logo Roma Antiga" /></a>
+      <a href="index.html">
+        <img src="HTML/CSS/IMG/ROMA.jpg" alt="Logo Roma Antiga" />
+      </a>
 
       <nav>
-        
         <ul>
-          <li><a class="ativo" href="index.html">Início</a></li>
-          <li><a href="HTML/comercio.html">Comércio</a></li>
-          <li><a href="HTML/tecnologia.html">Tecnologia</a></li>
-          <li><a href="HTML/rotas.html">Rotas</a></li>
-          <li><a href="HTML/poder.html">Poder</a></li>
-          <li><a href="HTML/sobre.html">Sobre</a></li>
-          <li><a href="HTML/login.html">Login</a></li>
+          <li><a class="ativo" href="index.html">INÍCIO</a></li>
+          <li><a href="HTML/comercio.html">COMÉRCIO</a></li>
+          <li><a href="HTML/tecnologia.html">TECNOLOGIA</a></li>
+          <li><a href="HTML/rotas.html">ROTAS</a></li>
+          <li><a href="HTML/poder.html">PODER</a></li>
+          <li><a href="HTML/sobre.html">SOBRE</a></li>
+          <li><a href="HTML/login.html">LOGIN</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="banner">
-        <div class="banner-conteudo">
-          <h1>
-            COMÉRCIO E<br />
-            CIRCULAÇÃO DE<br />
-            <span>TECNOLOGIA</span>
-          </h1>
+      <section id="banner">
+        <h1>COMÉRCIO E CIRCULAÇÃO DE <span>TECNOLOGIA</span></h1>
 
-          <p class="banner-texto">
-            Conheça as principais mercadorias, descubra as tecnologias
-            utilizadas pelos romanos e entenda como estradas e construções
-            contribuíram para a expansão e o desenvolvimento de Roma
+        <p>
+          Conheça as principais mercadorias, descubra as tecnologias utilizadas
+          pelos romanos e entenda como estradas e construções contribuíram para
+          a expansão e o desenvolvimento de Roma.
+        </p>
+
+        <details>
+          <summary>EXPLORAR O IMPÉRIO</summary>
+
+          <h2>O que foi o Império Romano?</h2>
+
+          <p>
+            O Império Romano foi a terceira e última fase da civilização romana,
+            iniciada em 27 a.C. com a coroação de Otávio Augusto. Esse período
+            se caracterizou pela forte centralização do poder político nas mãos
+            do imperador, removendo a antiga autoridade do Senado, e marcou o
+            auge econômico, militar e a máxima expansão territorial de Roma.
           </p>
 
-          <details class="explorar">
-            <summary>EXPLORAR O IMPÉRIO</summary>
-
-            <div class="conteudo">
-              <h2>O Que Foi O Império Romano?</h2>
-
-              <p>
-                O Império Romano foi a terceira e última fase da civilização
-                romana, iniciada em 27 a.C. com a coroação de Otávio Augusto.
-                Esse período se caracterizou pela forte centralização do poder
-                político nas mãos do imperador, removendo a antiga autoridade do
-                Senado, e marcou o auge econômico, militar e a máxima expansão
-                territorial de Roma.
-              </p>
-
-              <p>
-                Essa era chegou ao fim em 476 d.C. em sua região ocidental, após
-                um longo processo de crise interna e invasões de povos bárbaros.
-                O colapso foi selado com a destituição de Rômulo Augusto, o
-                último imperador, evento histórico que determinou o encerramento
-                da Idade Antiga e o início da Idade Média.
-              </p>
-            </div>
-          </details>
-        </div>
+          <p>
+            Essa era chegou ao fim em 476 d.C. em sua região ocidental, após um
+            longo processo de crise interna e invasões de povos bárbaros. O
+            colapso foi selado com a destituição de Rômulo Augusto, o último
+            imperador, evento histórico que determinou o encerramento da Idade
+            Antiga e o início da Idade Média.
+          </p>
+        </details>
       </section>
 
-      <section class="introducao">
-        <div class="introducao-titulo">
-          <div>
-            <p id="mini-titulo">CONTEXTO ANTERIOR</p>
-            <h2>A formação de Roma antes do período imperial</h2>
-          </div>
-        </div>
-        <div class="introducao-texto">
+      <section id="contexto">
+        <h2>
+          <span>CONTEXTO ANTERIOR</span>
+          A formação de Roma antes do período imperial
+        </h2>
+
+        <div>
           <p>
             Durante a República, Roma conquistou a Península Itálica, Europa
             Ocidental, Ásia Menor, norte da África e as penínsulas Balcânica e
             Ibérica, destacando-se as Guerras Púnicas contra Cartago pelo
             controle do Mediterrâneo. Esse crescimento gerou uma grave crise a
-            partir do século II a.C., gerando agitações sociais, conflitos de
+            partir do século II a.C., com agitações sociais, conflitos de
             classe, revoltas de escravizados e guerras civis.
           </p>
           <p>
@@ -104,64 +94,41 @@
         </div>
       </section>
 
-      <section class="exploracao">
+      <section id="sugestoes">
         <h2>SUGESTÕES PARA VOCÊ</h2>
-        <div class="cards">
-          <div class="card">
-            <div class="card-imagem">
-              <img src="HTML/CSS/IMG/quiz.png" alt="icone-quiz" />
-            </div>
-            <h3>QUIZ</h3>
 
+        <ul>
+          <li>
+            <img src="HTML/CSS/IMG/quiz.png" alt="Ícone de quiz" />
+            <h3>QUIZ</h3>
             <p>
               Teste seu conhecimento com base nas informações disponibilizadas
-              em nosso site
+              em nosso site.
             </p>
+            <a href="HTML/quiz.html">COMEÇAR QUIZ</a>
+          </li>
 
-            <a href="HTML/quiz.html">
-              COMEÇAR QUIZ
-              <span>→</span>
-            </a>
-          </div>
-
-          <div class="card">
-            <div class="card-imagem">
-              <img src="HTML/CSS/IMG/fale-conosco.png" alt="icone-tecnologia" />
-            </div>
-
+          <li>
+            <img src="HTML/CSS/IMG/fale-conosco.png" alt="Ícone de contato" />
             <h3>FALE CONOSCO</h3>
+            <p>Formulário para entrar em contato com os desenvolvedores.</p>
+            <a href="HTML/forms.html">FALE CONOSCO</a>
+          </li>
 
-            <p>Formulário para entrar em contato com os desenvolvedores</p>
-
-            <a href="HTML/forms.html">
-              FALE CONOSCO
-              <span>→</span>
-            </a>
-          </div>
-
-          <div class="card">
-            <div class="card-imagem">
-              <img
-                src="HTML/CSS/IMG/fonte-pesquisa.png"
-                alt="icone-bussola-rota"
-              />
-            </div>
-
+          <li>
+            <img
+              src="HTML/CSS/IMG/fonte-pesquisa.png"
+              alt="Ícone de fontes de pesquisa"
+            />
             <h3>FONTES</h3>
-
             <p>
-              Confira as fontes de pesquisa utilizada para o desenvolvimento do
-              nosso site
+              Confira as fontes de pesquisa utilizadas para o desenvolvimento do
+              nosso site.
             </p>
-
-            <a href="HTML/fontes.html">
-              CONFERIR
-              <span>→</span>
-            </a>
-          </div>
-        </div>
+            <a href="HTML/fontes.html">CONFERIR</a>
+          </li>
+        </ul>
       </section>
-
     </main>
 
     <footer>
@@ -172,33 +139,42 @@
 
         <div class="footer-links">
           <nav>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="HTML/comercio.html">Comércio</a></li>
-            <li><a href="HTML/tecnologia.html">Tecnologia</a></li>
-            <li><a href="HTML/rotas.html">Rotas</a></li>
-            <li><a href="HTML/poder.html">Poder</a></li>
-            <li><a href="HTML/sobre.html">Sobre</a></li>
-          </ul>
-        </nav>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="HTML/comercio.html">Comércio</a></li>
+              <li><a href="HTML/tecnologia.html">Tecnologia</a></li>
+              <li><a href="HTML/rotas.html">Rotas</a></li>
+              <li><a href="HTML/poder.html">Poder</a></li>
+              <li><a href="HTML/sobre.html">Sobre</a></li>
+            </ul>
+          </nav>
         </div>
 
         <div class="footer-cadastro">
-          <h3>CADASTRE-SE</h3>
+          <h2>CADASTRE-SE</h2>
 
-          <input type="text" placeholder="Nome" />
-          <input type="email" placeholder="E-mail" />
-
-          <button type="submit">CADASTRAR</button>
+          <form>
+            <input type="text" placeholder="Nome" aria-label="Nome" />
+            <input type="email" placeholder="E-mail" aria-label="E-mail" />
+            <button type="submit">CADASTRAR</button>
+          </form>
         </div>
       </div>
 
       <div class="footer-redes">
-        <a href="https://wa.me/5547996095892" target="_blank"
-          ><img src="HTML/CSS/IMG/whatsapp 1.svg" alt="icon-insta"
+        <a
+          href="https://wa.me/5547996095892"
+          target="_blank"
+          rel="noopener"
+          title="Fale conosco pelo WhatsApp"
+          ><img src="HTML/CSS/IMG/whatsapp%201.svg" alt="WhatsApp"
         /></a>
-        <a href="https://www.instagram.com/romaantigasepe/" target="_blank"
-          ><img src="HTML/CSS/IMG/instagram 1.svg" alt="icon-face"
+        <a
+          href="https://www.instagram.com/romaantigasepe/"
+          target="_blank"
+          rel="noopener"
+          title="Siga-nos no Instagram"
+          ><img src="HTML/CSS/IMG/instagram%201.svg" alt="Instagram"
         /></a>
       </div>
 
@@ -206,6 +182,5 @@
         <p>© 2026 Roma Antiga — SEPE</p>
       </div>
     </footer>
-    <script src="HTML/CSS/JS/login.js"></script>
   </body>
 </html>

@@ -1,64 +1,52 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
 
 header {
-  background: #420906;
-  color: white;
+  background-color: #420906;
   padding: 12px 5%;
-  padding-right: 15vw;
-  font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 12px;
+  font-family: "Nunito", sans-serif;
 }
 
 header img {
   width: 55px;
   height: auto;
-}
-
-header nav {
-  max-width: 1400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  display: block;
 }
 
 header ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 
 header a {
   color: white;
   text-decoration: none;
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 header a:hover,
 header a.ativo {
-  color: #d69d2a;
+  color: #d6a13b;
 }
 
-@media (min-width: 769px) {
+
+
+/* DESKTOP */
+@media (min-width: 768px) {
   header {
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  header nav {
-    flex-direction: row;
-    margin: 0;
+    padding: 12px 5%;
   }
 
   header img {
@@ -67,11 +55,10 @@ header a.ativo {
 
   header ul {
     flex-direction: row;
-    align-items: center;
-    gap: 24px;
+    gap: 25px;
   }
 
   header a {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }

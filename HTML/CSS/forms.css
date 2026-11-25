@@ -2,10 +2,6 @@
 @import url("header.css");
 @import url("footer.css");
 
-* {
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
   font-family:
@@ -28,6 +24,7 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-size: 16px;
 }
 
 .formulario {
